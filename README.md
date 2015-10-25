@@ -59,6 +59,8 @@ README.md
 Following on our example, to start working on the PCB we:
 
 1. `$ source setup.bash`
+1. `$ cd docker`
+1. `$ tiburoncin_docker_build` (wait a lot of time)
 1. `$ tiburoncin_kicad`
 
 Inside the kicad instance you will find that the paths are not the same. The program will be running from the home directory of a kicad *user*. In that home directory, you will find a folder with the same name as the project you created. That is the *same* project folder that you just created.
@@ -73,7 +75,7 @@ When starting to work on an existing project (a project we just cloned from gith
 
 Afther that, we start kicad (after source the setup.bash)
 
-1. `$ docker_kicad`
+1. `$<project_name>_kicad`
 
 # More information
 
